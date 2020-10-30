@@ -1,0 +1,38 @@
+{
+    "name": "vscode-jsona",
+    "displayName": "JSON5 syntax",
+    "description": "Adds syntax highlighting of JSONA files",
+    "version": "0.1.0",
+    "publisher": "sigoden",
+    "license": "MIT",
+    "engines": {
+      "vscode": "^1.3.0"
+    },
+  "icon": "icon.png",
+  "homepage": "https://github.com/sigoden/vscode-jsona/blob/master/README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sigoden/vscode-jsona"
+  },
+  "keywords": [
+    "jsona",
+    "syntax",
+    "highlight"
+  ],
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "jsona",
+      "aliases": ["JSONA", "jsona"],
+      "extensions": [".jsona"],
+      "configuration": "./jsona.configuration.json"
+    }],
+    "grammars": [{
+      "language": "jsona",
+      "scopeName": "source.jsona",
+      "path": "./syntaxes/jsona.json"
+    }]
+  }
+}
