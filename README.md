@@ -4,7 +4,7 @@
 
 ## Colorization
 
-![JSONA syntax in VS Code](https://marketplace.visualstudio.com/items?itemName=sigoden.vscode-jsona)
+![JSONA syntax in VS Code](https://user-images.githubusercontent.com/4012553/121985079-a62b3400-cdc6-11eb-8b01-b0f68e0d5506.png)
 
 ## Usage
 
