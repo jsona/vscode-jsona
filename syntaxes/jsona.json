@@ -267,6 +267,9 @@
 					"include": "#objectkey"
 				},
 				{
+					"include": "#comments"
+				},
+				{
 					"begin": ":",
 					"beginCaptures": {
 						"0": { "name": "punctuation.separator.dictionary.key-value.jsona" }
@@ -312,7 +315,8 @@
 				{ "include": "#number" },
 				{ "include": "#string" },
 				{ "include": "#array" },
-				{ "include": "#object" }
+				{ "include": "#object" },
+				{ "include": "#comments" }
 			]
 		},
 		"comments": {
