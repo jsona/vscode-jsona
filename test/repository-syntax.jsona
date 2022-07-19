@@ -12,9 +12,12 @@
     @number(-3)
     @string('abc "def" ghi')
     @array([3,4])
-    @object({k: "v"})
+    @object({
+        k1: "v1",
+        k2: "v2",
+    })
 
-    nullValue: null,
+    nullValue: /* xyz */ null,
     boolTrue: true,
     boolFale: false,
     float: 3.14,
