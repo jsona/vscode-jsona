@@ -19,7 +19,7 @@
 
     nullValue: /* xyz */ null,
     boolTrue: true,
-    boolFale: false,
+    boolFalse: false,
     float: 3.14,
     floatNegative: -3.14,
     floatNegativeWithoutInteger: -.14,
@@ -27,16 +27,16 @@
     integer: 3,
     hex: 0x1a,
     binary: 0b01,
-    otcal: 0o12,
+    octal: 0o12,
     integerNegative: -3,
     stringSingleQuota: 'abc "def" ghi',
     stringDoubleQuota: "abc 'def' ghi",
     stringBacktick: `abc
 def \`
 xyz`,
-    stringEscaple1: '\0\b\f\n\r\t\u000b\'\\\xA9\u00A9\u{2F804}',
-    stringEscaple2: "\0\b\f\n\r\t\u000b\'\\\xA9\u00A9\u{2F804}",
-    stringEscaple3: `\0\b\f\n\r\t\u000b\'\\\xA9\u00A9\u{2F804}`,
+    stringEscape1: '\0\b\f\n\r\t\u000b\'\\\xA9\u00A9\u{2F804}',
+    stringEscape2: "\0\b\f\n\r\t\u000b\'\\\xA9\u00A9\u{2F804}",
+    stringEscape3: `\0\b\f\n\r\t\u000b\'\\\xA9\u00A9\u{2F804}`,
     arrayEmpty: [], 
     arrayEmptyMultiLine: [ @array
     ],
@@ -45,7 +45,7 @@ xyz`,
         "a", @upper
         "b",
     ],
-    arrayOneline: ["a", "b"], @array
+    arrayOnline: ["a", "b"], @array
     arrayExtraComma: ["a", "b",],
     objectEmpty: {},
     objectEmptyMultiLine: { @object
