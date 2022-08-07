@@ -1,4 +1,4 @@
-# vscode-jsona
+# Vscode JSONA Syntax
 
 > This extension adds syntax highlighting of JSONA files in VS Code.
 
