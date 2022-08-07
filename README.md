@@ -4,7 +4,7 @@
 
 ## Colorization
 
-![JSONA syntax in VS Code](https://user-images.githubusercontent.com/4012553/183279113-4db6f097-69c1-4ff0-b5a0-8a4e835981ab.png)
+![JSONA syntax in VS Code](https://user-images.githubusercontent.com/4012553/183288426-45e123fe-f33c-47cc-b1d4-3f9961553ae7.png)
 
 ## Usage
 

@@ -2,7 +2,7 @@
   "name": "vscode-jsona",
   "displayName": "JSONA syntax",
   "description": "Adds syntax highlighting of JSONA files",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "publisher": "sigoden",
   "license": "MIT",
   "engines": {
