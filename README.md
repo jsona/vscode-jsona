@@ -4,7 +4,7 @@
 
 ## Colorization
 
-![JSONA syntax in VS Code](https://user-images.githubusercontent.com/4012553/121985079-a62b3400-cdc6-11eb-8b01-b0f68e0d5506.png)
+![JSONA syntax in VS Code](https://user-images.githubusercontent.com/4012553/183279113-4db6f097-69c1-4ff0-b5a0-8a4e835981ab.png)
 
 ## Usage
 
@@ -26,24 +26,6 @@
 ### Supported filetypes
 
   * `.jsona`
-
-## Contributing
-
-> These simple rules will help me to solve your problem.
-
-  * Check the **Issues** and **Pull requests** sections for duplicates of your question or path.
-  * Please, use GitHub emotions.
-  * If you want create **Issue**:
-    * Specify the version of your editor and used theme.
-    * Detailed description of your problem:
-      * Description
-      * Code sample
-      * Screenshot
-  * If you want create **Pull request**:
-    * Fork this repository and clone it to your machine.
-    * Open folder contains this extension in VS Code.
-    * Press <kbd>F5</kbd>.
-    * Make your changes and send a PR.
 
 ## License
 
