@@ -3,7 +3,7 @@ name: Release
 on:
   push:
     tags:
-    - v[0-9]+.[0-9]+.[0-9]+*
+    - v[0-9]+.[0-9]+.[0-9]+
 
 jobs:
   publish:
@@ -13,18 +13,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Check Tag
-      id: check-tag
-      shell: bash
-      run: |
-        tag=${GITHUB_REF##*/}
-        echo "::set-output name=version::$tag"
-        if [[ "$tag" =~ [0-9]+.[0-9]+.[0-9]+$ ]]; then
-          echo "::set-output name=rc::false"
-        else
-          echo "::set-output name=rc::true"
-        fi
-
     - uses: actions/setup-node@v3
       with:
         node-version: '14'
@@ -32,12 +20,8 @@ jobs:
     - name: Publish Extension
       shell: bash
       run: |
-        args=""
-        if [[ "${{ steps.check-tag.outputs.rc }}" == "true" ]]; then
-          args="--pre-release"
-        fi
-        npx vsce package -o jsona-syntax.vsix $args
-        npx vsce publish --pat ${{ secrets.MARKETPLACE_TOKEN }} --packagePath jsona-syntax.vsix $args
+        npx vsce package -o jsona-syntax.vsix
+        npx vsce publish --pat ${{ secrets.MARKETPLACE_TOKEN }} --packagePath jsona-syntax.vsix
 
     - name: Publish Release
       uses: softprops/action-gh-release@v0.1.5
@@ -45,6 +29,6 @@ jobs:
       with:
         draft: false
         files: jsona-syntax.vsix
-        prerelease: ${{ steps.check-tag.outputs.rc == 'true' }}
+        prerelease: false
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
