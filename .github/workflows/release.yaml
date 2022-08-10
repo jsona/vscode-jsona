@@ -28,7 +28,6 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version: '14'
-        cache: 'yarn'
 
     - name: Publish Extension
       shell: bash
@@ -37,8 +36,7 @@ jobs:
         if [[ "${{ steps.check-tag.outputs.rc }}" == "true" ]]; then
           args="--pre-release"
         fi
-        yarn install --frozen-lockfile
-        yarn package $args
+        npx vsce package -o jsona-syntax.vsix $args
         npx vsce publish --pat ${{ secrets.MARKETPLACE_TOKEN }} --packagePath jsona-syntax.vsix $args
 
     - name: Publish Release
