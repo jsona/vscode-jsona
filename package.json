@@ -1,8 +1,8 @@
 {
-  "name": "vscode-jsona",
+  "name": "vscode-jsona-syntax",
   "displayName": "JSONA syntax",
   "description": "Adds syntax highlighting of JSONA files",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "publisher": "sigoden",
   "license": "MIT",
   "engines": {
@@ -15,7 +15,7 @@
     "url": "https://github.com/jsona/vscode-jsona-syntax"
   },
   "scripts": {
-    "pkg": "vsce package"
+    "package": "vsce package -o jsona-syntax.vsix"
   },
   "keywords": [
     "jsona",
